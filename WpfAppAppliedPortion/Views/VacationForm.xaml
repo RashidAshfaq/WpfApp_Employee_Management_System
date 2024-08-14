@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfAppAppliedPortion.Views.VacationForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Vacation Form" Height="300" Width="400">
+    <Grid Margin="10">
+        <StackPanel>
+            <TextBlock Text="Employee ID" />
+            <TextBox Name="EmployeeIDTextBox" IsReadOnly="True" />
+            <TextBlock Text="Number of Days" />
+            <TextBox Name="NumberOfDaysTextBox" />
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                <Button Name="SaveButton" Content="Save" Click="SaveButton_Click" Margin="5" />
+                <Button Name="CancelButton" Content="Cancel" Click="CancelButton_Click" Margin="5" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
